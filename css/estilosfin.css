@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Averta;
+}
+@font-face {
+    font-family: Averta;
+    src: url(AvertaDemoPE-Regular.woff);
+    font-weight: bold;
+}
+body{
+    background-image: url("FONDO.jpg");
+    background-size: 2000px;
+}
+header,.main, footer{
+    width: 50%;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+.Titulo{
+    width: 500px;
+    font-weight: bold;
+}
+
+.Texto{
+    align-self: auto;
+    width: 300px;
+    font-size: 26px;
+}
+
+.EmbendedI {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.Txtbox1{
+    padding: 10px 60px;
+    opacity: 80%;
+    font-size: 14px;
+}
+
+.boton {
+    opacity: 80%;
+    font-size: 16px;
+    padding: 10px 50px;
+}
+
+.Titulo,.Texto, .boton, .Txtbox1, .Txtbox2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Txtbox1, .Txtbox2, .boton {
+    background-color: black;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 4px 4px;
+}
+
+.Txtbox2{
+    padding: 12px 75px;
+    text-align: left;
+    opacity: 50%;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="container"] {
+        width: 50%;
+    }
+}
